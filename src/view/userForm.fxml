@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.userFormController">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="107.0" layoutY="400.0" onAction="#btnUpdateUserOnAction" prefHeight="52.0" prefWidth="123.0" style="-fx-background-color: green;" text="Update User" textFill="#fcfafa">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXButton>
+      <Label layoutX="133.0" layoutY="67.0" text="User Account Details Managements">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtUserName" layoutX="101.0" layoutY="188.0" prefHeight="52.0" prefWidth="257.0" promptText="User Name" />
+      <JFXTextField fx:id="txtPassword" layoutX="101.0" layoutY="284.0" prefHeight="52.0" prefWidth="257.0" promptText="Password" />
+      <ImageView fitHeight="142.0" fitWidth="367.0" layoutX="350.0" layoutY="551.0">
+         <image>
+            <Image url="@asset/bd%20(1)%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="154.0" fitWidth="181.0" layoutX="513.0" layoutY="417.0">
+         <image>
+            <Image url="@asset/s4.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="196.0" fitWidth="230.0" layoutX="147.0" layoutY="513.0">
+         <image>
+            <Image url="@asset/2a.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="109.0" fitWidth="161.0" layoutX="21.0" layoutY="580.0">
+         <image>
+            <Image url="@asset/4a.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="142.0" fitWidth="205.0" layoutX="491.0" layoutY="284.0">
+         <image>
+            <Image url="@asset/s3.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

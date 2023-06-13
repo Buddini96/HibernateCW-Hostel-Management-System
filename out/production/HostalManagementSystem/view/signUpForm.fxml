@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="signUpContext" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: purple;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.signUpFormController">
+   <children>
+      <AnchorPane layoutX="512.0" prefHeight="800.0" prefWidth="488.0" style="-fx-background-color: white;">
+         <children>
+            <JFXTextField fx:id="txtName" layoutX="66.0" layoutY="228.0" prefHeight="50.0" prefWidth="288.0" promptText="User Name" unFocusColor="#1b1717">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font></JFXTextField>
+            <JFXPasswordField fx:id="pwdPassword" layoutX="66.0" layoutY="321.0" prefHeight="50.0" prefWidth="288.0" promptText="Password" unFocusColor="#1e1e1e">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></JFXPasswordField>
+            <JFXPasswordField fx:id="pwdPassword1" layoutX="66.0" layoutY="413.0" prefHeight="50.0" prefWidth="288.0" promptText="Confirm Password" unFocusColor="#2c2a2a">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font></JFXPasswordField>
+            <Text fill="#221c1c" layoutX="127.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Up Form">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Text>
+            <JFXButton buttonType="RAISED" layoutX="66.0" layoutY="548.0" onAction="#btnSignUpOnAction" prefHeight="32.0" prefWidth="102.0" style="-fx-background-color: green;" text="Sign Up">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="232.0" layoutY="548.0" onAction="#btnBackOnAction" prefHeight="32.0" prefWidth="102.0" style="-fx-background-color: orange;" text="Back">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Text fill="#f5f3f3" layoutX="79.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thank you!                        Thanks for signing up. Welcome to our community. We are happy to have you on board." wrappingWidth="304.0000025033951">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="162.0" fitWidth="223.0" layoutX="-8.0" layoutY="580.0">
+         <image>
+            <Image url="@asset/s1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="177.0" fitWidth="216.0" layoutX="296.0" layoutY="582.0">
+         <image>
+            <Image url="@asset/2a.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="148.0" fitWidth="216.0" layoutX="138.0" layoutY="605.0">
+         <image>
+            <Image url="@asset/4a.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

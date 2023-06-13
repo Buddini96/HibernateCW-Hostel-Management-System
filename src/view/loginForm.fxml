@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="loginContext" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: PURPLE;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.loginFormController">
+   <children>
+      <AnchorPane layoutX="501.0" prefHeight="800.0" prefWidth="499.0" style="-fx-background-color: WHITE;">
+         <children>
+            <JFXTextField fx:id="txtPasswordFiled" layoutX="100.0" layoutY="428.0" prefHeight="50.0" prefWidth="288.0" unFocusColor="#fffdfd" />
+            <JFXPasswordField fx:id="pwdPassword" layoutX="100.0" layoutY="428.0" prefHeight="50.0" prefWidth="288.0" promptText="Password" unFocusColor="#2f2b2b">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXTextField fx:id="txtUserName" layoutX="102.0" layoutY="330.0" prefHeight="50.0" prefWidth="288.0" promptText="User Name" unFocusColor="#2f2c2c">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="btnHide" layoutX="388.0" layoutY="438.0" onAction="#passwordHideOnAction" prefHeight="31.0" prefWidth="40.0" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@asset/show.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnShow" layoutX="388.0" layoutY="438.0" onAction="#passwordShowOnAction" prefHeight="31.0" prefWidth="39.0" style="-fx-background-color: white;" textFill="#ffffff00">
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="21.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@asset/hide.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Text fill="#1e1c1c" layoutX="166.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login Form">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Text>
+            <JFXButton buttonType="RAISED" layoutX="97.0" layoutY="556.0" onAction="#btnLoginOnAction" prefHeight="50.0" prefWidth="102.0" ripplerFill="#19668c" style="-fx-background-color: green;" text="Login" textFill="#220404">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="263.0" layoutY="556.0" onAction="#btnSignInOnAction" prefHeight="50.0" prefWidth="102.0" ripplerFill="#19668c" style="-fx-background-color: Orange;" text="Sign Up" textFill="#220404">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <FontAwesomeIcon glyphName="USER" layoutX="42.0" layoutY="367.0" size="30" />
+            <FontAwesomeIcon glyphName="UNLOCK_ALT" layoutX="42.0" layoutY="471.0" size="30" />
+         </children>
+      </AnchorPane>
+      <Text fill="#f5f4f4" layoutX="78.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="D24 Hostal Management System" wrappingWidth="384.46044921875">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="184.0" fitWidth="177.0" layoutX="7.0" layoutY="575.0">
+         <image>
+            <Image url="@asset/2a.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="165.0" fitWidth="224.0" layoutX="145.0" layoutY="587.0">
+         <image>
+            <Image url="@asset/bd (1) (1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="136.0" fitWidth="155.0" layoutX="338.0" layoutY="597.0">
+         <image>
+            <Image url="@asset/s1.png" />
+         </image>
+      </ImageView>
+      <FontAwesomeIcon fill="#fff9f9" glyphName="XING" layoutX="30.0" layoutY="348.0" size="35" wrappingWidth="23.57142796367407" />
+   </children>
+</AnchorPane>
